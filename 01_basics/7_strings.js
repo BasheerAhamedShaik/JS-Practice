@@ -14,3 +14,20 @@ console.log(myName.length);        // 10
 console.log(myName.toUpperCase()); // TONY-STARK
 console.log(myName.charAt(0));     // T
 console.log(myName.indexOf('T'));     // 0
+
+console.log(myName.substring(0,4));  // Tony
+console.log(myName.substring(-5,4));  // Tony (negative indexing not works)
+console.log(myName.slice(-8,4));  // ny
+
+const user = "    Tony   "
+console.log(user);         // prints as it is
+console.log(user.trim());  // removes whitespaces
+
+// we have trimStart() and trimEnd() but trim() is a combination of both
+
+const url = "www.portfolio.com"
+console.log(url.replace('portfolio','Tony'))
+
+console.log(url.includes('Tony'))
+console.log(myName.split('-'));   // gives output in the form of arrays  [ 'Tony', 'Stark' ]
+
