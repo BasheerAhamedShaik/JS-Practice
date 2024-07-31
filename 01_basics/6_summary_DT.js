@@ -40,3 +40,36 @@ console.log(typeof myFunction);  // function (actually it is a function object)
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//**********************************************************************************//
+
+// Stack (Primitive)  Heap(Non-primitive)
+// datatypes are based on memory allocation
+
+// Primitive datatypes =>  call by value (string,number,boolean,null,undefined,BigInt,symbol) =>Stack memory
+
+// Reference/Non primitive data types => call by reference ( array,object, function) => heap memory
+
+// JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it.
+
+let myName = "Tony"
+let anName = myName
+
+anName = "Stark"
+console.log(myName);
+console.log(anName);
+
+let obj1 = {
+    name: 'harry',
+    rollno: 21
+}
+
+let obj2 = obj1
+console.log(obj1.name);   // harry
+
+obj2.name = 'John'
+
+console.log(obj1.name);   // John
+console.log(obj2.name);   // John
