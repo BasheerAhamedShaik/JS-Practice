@@ -1,3 +1,8 @@
+// => Array in a non-primitive data types. 
+// => It is used to store nultiple items under a single varible. 
+// => slice() does not manupulate main array.
+// => splice() manupulate original array.
+
 const arr = [0,1,2,3,4,5]
 console.log(arr);         // [ 0, 1, 2, 3, 4 ]
 
@@ -38,6 +43,8 @@ console.log("B ",arr);            // B  [ 0, 1, 2, 3, 4, 5 ] ( no change in the 
 const arr3 = arr.splice(1,3); 
 console.log(arr3);                // [ 1, 2, 3 ] ( This is not just including 3rd indexing but it also manipulates the array)
 console.log("C ",arr);            // C [ 0, 4, 5 ]
+
+
 
 
 
