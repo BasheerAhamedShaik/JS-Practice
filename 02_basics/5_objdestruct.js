@@ -18,11 +18,11 @@ console.log(instructor);            // Hitesh
 // API is nothing but you will get some values from backend. now how will you write? Earlier values comes in Xml structure(complex) but now values will come in JSON
 // now let us look how JSON looks
 
-{
-    "name": "stark",
-    "course": "JS",
-    "price": "free"
-}
+// {
+//     "name": "stark",
+//     "course": "JS",
+//     "price": "free"
+// }
 
 // this is how we can get values in JSON
 
