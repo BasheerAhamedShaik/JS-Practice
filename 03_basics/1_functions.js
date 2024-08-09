@@ -39,3 +39,9 @@ console.log(loginUserMessage("stark"));   // stark just logged in
 console.log(loginUserMessage());          // undefined just logged in
 console.log(loginUserMessage(""));        //  just logged in
 console.log(loginUserMessage("stark"));   // this overwrites Tony
+
+function calCartPrice(num){
+    return num
+}
+
+console.log(calCartPrice(2));    // 2
