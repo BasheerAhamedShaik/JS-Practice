@@ -13,3 +13,19 @@ if(true){             // outside of this if scope(block scope) is called Global 
 console.log(c);     // 30 ( this is the problem with var) if we declare again another value of c also it will print 30
 
 console.log(a);     // 100
+
+
+// ***************** Scope Level ***************** //
+
+function one(){
+    const uName = "Stark"
+
+    function two(){
+        const platform = "Youtube"
+        console.log(uName);
+    }
+    // console.log(platform);            // first error is encountered here. Because we can't access the child function variable outside
+    
+    two()
+}
+one()         // Stark
